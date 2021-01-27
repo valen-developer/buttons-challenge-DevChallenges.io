@@ -1,0 +1,27 @@
+.title {
+  height: 30vh;
+  font-weight: bold;
+  padding: 2rem 0;
+
+  align-items: center;
+}
+.title .dev {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.title span {
+  color: red;
+  font-weight: bold;
+}
+
+.routes {
+  height: 70vh;
+}
+.routes > a {
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #090f31;
+}

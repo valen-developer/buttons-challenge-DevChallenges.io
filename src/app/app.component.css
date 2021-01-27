@@ -1,0 +1,18 @@
+.main {
+  display: flex;
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+  padding: 5rem;
+}
+.side-bar {
+  width: 20%;
+  background-color: #fafbfd;
+
+  position: sticky;
+  height: 100vh;
+
+  border-radius: 0 10px 10px 0;
+}
