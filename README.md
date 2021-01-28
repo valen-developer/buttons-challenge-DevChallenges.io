@@ -6,7 +6,7 @@ It´s simple, We just need to make some buttons: different sizes, colors, shapes
 
 Also I´ve made a responsive navbar (sidebar rather) although I have to get better the code organization.
 
-# Run project in localhost
+# :running: Run project in localhost
 
 1. First clone this repo:
 
@@ -30,7 +30,7 @@ git clone
 
 # :eyes: Visit de Demo web
 
-Go to [demo web]()
+Go to [demo web](https://valen-developer.github.io/buttons-challenge-DevChallenges.io/buttons)
 
 # :camera: Screenshots
 
