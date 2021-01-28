@@ -1,3 +1,6 @@
+.menu {
+  height: 100%;
+}
 .title {
   height: 30vh;
   font-weight: bold;
@@ -24,4 +27,54 @@
 a {
   text-decoration: none;
   color: #090f31;
+}
+
+.menu-btn {
+  position: fixed;
+  z-index: 1;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.line {
+  width: 30px;
+  height: 5px;
+  background-color: rgb(70, 172, 255);
+  margin-top: 5px;
+  transition: 0.3s;
+}
+
+.top-line {
+  transform: rotate(45deg) translate3d(4px, 10px, 0);
+  width: 30px;
+  background-color: red;
+}
+.middle-line {
+  opacity: 0;
+}
+.bottom-line {
+  transform: rotate(-45deg) translate3d(4px, -10px, 0);
+  width: 30px;
+  background-color: red;
+}
+
+@media screen and (max-width: 900px) {
+  .menu-btn {
+    display: block;
+  }
+  .routes > a {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-height: 500px) {
+  .menu-btn {
+    display: block;
+  }
+  .routes > a {
+    font-size: 25px;
+    margin-top: 20px;
+  }
 }

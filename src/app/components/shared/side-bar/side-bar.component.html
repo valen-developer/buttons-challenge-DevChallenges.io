@@ -1,4 +1,4 @@
-<div class="col col-horizontal-center">
+<div class="col col-horizontal-center menu">
   <div class="col title">
     <p class="dev">
       <a href="https://devchallenges.io/paths/frontEndPaths"><span>Dev</span></a
@@ -12,7 +12,23 @@
   </div>
 
   <div class="col routes">
-    <a routerLink="/buttons" routerLinkActive="active">Buttons</a>
-    <a routerLink="/inputs" routerLinkActive="active">Inputs</a>
+    <a
+      routerLink="/buttons"
+      (click)="manageSideBarShow()"
+      routerLinkActive="active"
+      >Buttons</a
+    >
+    <a
+      routerLink="/inputs"
+      (click)="manageSideBarShow()"
+      routerLinkActive="active"
+      >Inputs</a
+    >
   </div>
+</div>
+
+<div class="menu-btn" id="menu" (click)="manageSideBarShow()">
+  <div class="line" id="top-line"></div>
+  <div class="line" id="middle-line"></div>
+  <div class="line" id="bottom-line"></div>
 </div>

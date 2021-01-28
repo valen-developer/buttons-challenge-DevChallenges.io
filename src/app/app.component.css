@@ -1,6 +1,7 @@
 .main {
   display: flex;
   width: 100%;
+  position: relative;
 }
 
 .container {
@@ -11,8 +12,41 @@
   width: 20%;
   background-color: #fafbfd;
 
-  position: sticky;
-  height: 100vh;
+  height: calc(100vh + 50px);
 
   border-radius: 0 10px 10px 0;
+  transition: 0.5s;
+}
+
+@media screen and (max-height: 500px) {
+  .side-bar {
+    position: fixed;
+    left: -100%;
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-height: 600px) {
+  .side-bar {
+    width: 30%;
+  }
+  .container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .side-bar {
+    position: fixed;
+    left: -100%;
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+    padding: 50px;
+  }
 }

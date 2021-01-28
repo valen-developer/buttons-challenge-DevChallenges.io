@@ -10,7 +10,7 @@ a:hover {
 }
 
 .box {
-  height: 100%;
+  min-height: 100%;
   justify-content: space-between;
 }
 .btn {
@@ -20,8 +20,11 @@ a:hover {
 
   border: none;
   border-radius: 5px;
+  outline: none;
 
-  min-width: 100px;
+  max-width: max-content;
+  min-width: 120px;
+  margin-top: 20px;
 
   color: #3f3f3f;
   background-color: #e0e0e0;
@@ -34,6 +37,11 @@ a:hover {
 .btn:hover,
 .btn:focus {
   background-color: #aeaeae;
+}
+
+.btn-block {
+  max-width: 100%;
+  width: 100%;
 }
 
 .btn:disabled {
@@ -122,6 +130,7 @@ a:hover {
 
 .sm {
   min-width: 20px;
+  min-height: 20px;
   padding: 5px 10px;
 }
 .md {
@@ -135,4 +144,57 @@ a:hover {
 
 .disable-shadow {
   box-shadow: none;
+}
+
+.credits {
+  margin-top: 30px;
+}
+
+.icon-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.color-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 80%;
+}
+
+@media screen and (max-width: 1200px) {
+  .icon-buttons {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .btn {
+    min-height: 50px;
+  }
+
+  .icon-buttons {
+    width: 60%;
+  }
+
+  .credits {
+    font-size: 1.5rem;
+  }
+  .credits > div {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-height: 500px) {
+  .btn {
+    min-height: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .icon-buttons {
+    width: 100%;
+  }
+  .color-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
